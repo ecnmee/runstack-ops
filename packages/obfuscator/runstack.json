@@ -1,0 +1,8 @@
+{
+  "name": "runstack/obfuscator",
+  "version": "1.0.0-open",
+  "levels": [1, 2, 3],
+  "features": ["minify", "rename-variables", "string-obfuscation"],
+  "protection_rate": "60%",
+  "note": "Versão open-source. Níveis 4-6 disponíveis em runstack.dev"
+}
