@@ -1,0 +1,34 @@
+{
+    "name": "runstack/obfuscator",
+    "description": "RunStack Obfuscator é um pacote dentro os vários da RunStack, destinado a Proteção avançada e inteligente de código PHP. Ofusca, protege e dificulta engenharia reversa mantendo desempenho e legibilidade em produção.  Ideal para distribuir scripts comerciais, APIs privadas, plugins e software proprietário com segurança máxima.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Costa Nkuansambu",
+            "email": "eduardo@runstack.dev"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "nikic/php-parser": "^4.15"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RunStack\\Obfuscator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RunStack\\Obfuscator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

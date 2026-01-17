@@ -1,3 +1,12 @@
+# Dependências
 vendor/
 composer.lock
+
+# Resultados gerados pelos testes manuais
+test_level*_output.php
+test_level*_input.php
+
+# Logs e caches
 *.log
+.php-cs-fixer.cache
+.phpunit.result.cache
