@@ -1,34 +1,53 @@
 {
     "name": "runstack/dev",
-    "description": "",
-    "type": "library",
+    "description": "RunStack é uma Plataforma modular para desenvolvimento de ferramentas PHP seguras, performáticas e escaláveis. Inclui pacotes para ofuscação de código, autenticação, APIs e mais.",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
             "name": "Eduardo Costa Nkuansambu",
-            "email": "eduardo@runstack.dev"
+            "email": "eduardo@runstack.dev",
+            "homepage": "https://runstack.dev",
+            "role": "Lead Developer"
         }
     ],
+    "keywords": [
+        "runstack",
+        "php",
+        "monorepo",
+        "obfuscator",
+        "security",
+        "modular",
+        "tools"
+    ],
+    "homepage": "https://github.com/ecnmee/runstack-ops",
+    "support": {
+        "issues": "https://github.com/ecnmee/runstack-ops/issues",
+        "source": "https://github.com/ecnmee/runstack-ops"
+    },
     "require": {
         "php": ">=8.0",
-        "nikic/php-parser": "^4.15"
+        "runstack/obfuscator": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/obfuscator"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "RunStack\\Obfuscator\\": "src/"
+            "RunStack\\Obfuscator\\": "packages/obfuscator/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RunStack\\Obfuscator\\Tests\\": "tests/"
+            "RunStack\\Obfuscator\\Tests\\": "packages/obfuscator/tests/"
         }
     },
-    "scripts": {
-        "test": "phpunit"
-    },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
